@@ -7,10 +7,9 @@ const FULL_HEART = '♥'
     modal.className="hidden"
     
 
-const theHearts = document.querySelectorAll(".like-glyph")
-for(let heart of theHearts){
-  heart.addEventListener('click',likerFunc)
-}
+const theHearts = document.querySelectorAll(".like-glyph").forEach
+( (heart) => heart.addEventListener('click',likerFunc));
+
 
 
 
