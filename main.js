@@ -7,8 +7,13 @@ const FULL_HEART = '♥'
     modal.className="hidden"
     
 
-const articleHearts = document.querySelectorAll(".like-glyph").forEach
-((heart)=>addEventListener('click',likerFunc) );
+const theHearts = document.querySelectorAll(".like-glyph")
+for(let heart of theHearts){
+  heart.addEventListener('click',likerFunc)
+}
+
+
+
 
 function likerFunc(e){ 
    let moz = e.target;
